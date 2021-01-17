@@ -1,0 +1,18 @@
+# Regular-Expression
+s = "Afganisthan ,America,Bangladesh,Canada,Denmark,England,Greenland,Iceland,Netherlands,New Zeland,Sweden,Switzerland"
+countries = s.split(",")
+#print(countries)
+
+# li = [item for item in countries if item.endswith("land")]
+# print(li)
+lst =[]
+for i in countries:
+    if i.endswith("land"):
+        print(i)
+        lst.append(i)
+
+
+
+        countries.remove(i)
+
+print(lst)
