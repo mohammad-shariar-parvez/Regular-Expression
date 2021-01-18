@@ -1,0 +1,5 @@
+s= "Bangladesh is our homeland holmeland "
+mil = re.search("B.+?l",s)
+
+print(mil)
+print(mil.group())
