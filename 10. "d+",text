@@ -1,0 +1,4 @@
+import re
+text = "Phone number : 01842403974."
+mil = re.search("d+",text)
+print(text)
