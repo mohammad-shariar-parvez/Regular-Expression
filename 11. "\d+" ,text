@@ -1,0 +1,4 @@
+import re
+text = "house number : 5 ,phone number:01842403974."
+mil = re.search("\d+" ,text)
+print(mil.group())
