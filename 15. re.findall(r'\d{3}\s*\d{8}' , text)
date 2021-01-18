@@ -1,0 +1,4 @@
+import re
+text = "multiple phone number, 01722403974,01842403974,01915994612,000000000000,123-123"
+result = re.findall(r'\d{3}\s*\d{8}' , text)
+print(result)
