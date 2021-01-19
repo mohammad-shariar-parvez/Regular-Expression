@@ -1,0 +1,39 @@
+<ul>
+<li>
+Australia
+    <ol>
+        <li>Steven Smith</li>
+        <li>David Warner</li>
+    </ol>
+</li>
+    <li>
+        Bangladesh
+        <ol>
+            <li>Mashrafe Mortaza</li>
+            <li>Tamim Iqbal</li>
+        </ol>
+    </li>
+    <li>
+        England
+        <ol>
+            <li>Eoin Morgan</li>
+            <li>Jos Buttler</li>
+        </ol>
+    </li>
+</ul>
+
+-------------------------------------
+import re
+"""import requests
+url = "http://localhost:63342/Reguler%20Expression/Cricketer.html?_ijt=n3qj1ng3f7rn10c128r7ktekuh"
+response = requests.get(url)"""
+with open ("Cricketer.html","r") as f :
+    file=f.read()
+
+mil = re.search("Bangladesh",file)
+bd = mil.group()
+mil2= re.search("Mashrafe Mortaza",file)
+bd2=mil2.group()
+mil3= re.search("Tamim Iqbal",file)
+bd3=mil3.group()
+print(bd,"-",bd2,bd3)
